@@ -1,0 +1,16 @@
+.topnavbar{
+    height: 44px;
+    background-color: #F5F6F8;
+}
+.topnavbar .topnavbar-content{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topnavbar-content a{
+    font-size: 11px;
+    letter-spacing: -0.24px;
+    line-height: 16.5px;
+    color: #333333;
+}
