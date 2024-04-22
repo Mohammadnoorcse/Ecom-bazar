@@ -1,0 +1,10 @@
+.top-footer{
+    background-color: rgb(67, 157, 223) !important;
+    padding: 2.8rem 0px;
+    box-sizing: inherit;
+}
+.top-footer .top-footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
