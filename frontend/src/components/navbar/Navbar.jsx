@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="navbar-content-3">
             <div className="navbar-content-3-1">
               <i class="fa-regular fa-user"></i>
-              <Link to="/">sign in</Link>
+              <Link to="/login">sign in</Link>
             </div>
             <div className="navbar-content-3-2">
               <div>
@@ -66,7 +66,7 @@ export default function Navbar() {
             <div className="navbar-content-3">
               <div className="navbar-content-3-1">
                 <i class="fa-regular fa-user"></i>
-                <Link to="/">sign in</Link>
+                <Link to="/login">sign in</Link>
               </div>
               <div className="navbar-content-3-2">
                 <div>

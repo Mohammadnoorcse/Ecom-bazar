@@ -200,3 +200,8 @@
 }
 
 /* ............bottom footer............. */
+
+.bottom-footer{
+    padding: 3rem 0px;
+    color: rgb(102, 102, 102);
+}

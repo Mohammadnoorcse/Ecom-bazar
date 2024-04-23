@@ -4,6 +4,8 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Home from './Page/Home'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
+import Login from './components/login/Login'
+import { Signup } from './components/login/Signup'
 export default function App() {
   return (
     <BrowserRouter>
@@ -11,6 +13,8 @@ export default function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/> 
+        <Route path="/login" element={<Login/>}/> 
+        <Route path="/register" element={<Signup/>}/> 
       </Routes>
       <Footer/> 
 

@@ -85,11 +85,7 @@ export default function Footer() {
 
         </div>
      </div>
-     <div className="bottom-footer centent-center w-100">
-        <div className="bottom-footer-content content">
-
-        </div>
-     </div>
+ 
     </>
   )
 }
