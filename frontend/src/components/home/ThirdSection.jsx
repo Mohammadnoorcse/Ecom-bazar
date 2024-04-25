@@ -80,14 +80,14 @@ function ThirdSection() {
                       < img src="https://images.othoba.com/images/thumbs/0646224_nima-electric-2-in-1-blender-and-grinder_300.webp" alt="" />
                     </div>
                     <div className='image-item-1-2'>
-                        <h2>Nima Electric 2 in 1 Blender and Grinder</h2>
+                        <span>Nima Electric 2 in 1 Blender and Grinder</span>
                         <span>Tk 900 <del>2500</del></span>
                         <div className="rating">
-                          <i class="fa-solid fa-star active"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star"></i>
+                          <i class="zmdi zmdi-star"></i>
                         </div>
                     </div>
                 
@@ -99,14 +99,14 @@ function ThirdSection() {
                       < img src="https://images.othoba.com/images/thumbs/0597148_digital-scale-machine-10kg-kitchen-scale-digital-machine-sf-400-electronic-scale-digital-lcd-weight-_300.webp" alt="" />
                     </div>
                     <div className='image-item-1-2'>
-                        <h2>Nima Electric 2 in 1 Blender and Grinder</h2>
+                        <span>Nima Electric 2 in 1 Blender and Grinder</span>
                         <span>Tk 900 <del>2500</del></span>
                         <div className="rating">
-                          <i class="fa-solid fa-star active"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star"></i>
+                          <i class="zmdi zmdi-star"></i>
                         </div>
                     </div>
                 
@@ -118,14 +118,14 @@ function ThirdSection() {
                       < img src="https://images.othoba.com/images/thumbs/0597215_-3-1200mah-5v-usb-309883009-309883009_300.webp" alt="" />
                     </div>
                     <div className='image-item-1-2'>
-                        <h2>Nima Electric 2 in 1 Blender and Grinder</h2>
+                        <span>Nima Electric 2 in 1 Blender and Grinder</span>
                         <span>Tk 900 <del>2500</del></span>
                         <div className="rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star"></i>
+                          <i class="zmdi zmdi-star"></i>
                         </div>
                     </div>
                 
@@ -141,14 +141,14 @@ function ThirdSection() {
                       < img src="https://images.othoba.com/images/thumbs/0646107_yhx-11-portable-solar-torchlight-fan_300.webp" alt="" />
                     </div>
                     <div className='image-item-1-2'>
-                        <h2>Nima Electric 2 in 1 Blender and Grinder</h2>
+                        <span>Nima Electric 2 in 1 Blender and Grinder</span>
                         <span>Tk 900 <del>2500</del></span>
                         <div className="rating">
-                          <i class="fa-solid fa-star active"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star"></i>
+                          <i class="zmdi zmdi-star"></i>
                         </div>
                     </div>
                 
@@ -160,14 +160,14 @@ function ThirdSection() {
                       < img src="https://images.othoba.com/images/thumbs/0597148_digital-scale-machine-10kg-kitchen-scale-digital-machine-sf-400-electronic-scale-digital-lcd-weight-_300.webp" alt="" />
                     </div>
                     <div className='image-item-1-2'>
-                        <h2>Nima Electric 2 in 1 Blender and Grinder</h2>
+                        <span>Nima Electric 2 in 1 Blender and Grinder</span>
                         <span>Tk 900 <del>2500</del></span>
                         <div className="rating">
-                          <i class="fa-solid fa-star active"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star"></i>
+                          <i class="zmdi zmdi-star"></i>
                         </div>
                     </div>
                 
@@ -179,14 +179,14 @@ function ThirdSection() {
                       < img src="https://images.othoba.com/images/thumbs/0597215_-3-1200mah-5v-usb-309883009-309883009_300.webp" alt="" />
                     </div>
                     <div className='image-item-1-2'>
-                        <h2>Nima Electric 2 in 1 Blender and Grinder</h2>
+                        <span>Nima Electric 2 in 1 Blender and Grinder</span>
                         <span>Tk 900 <del>2500</del></span>
                         <div className="rating">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star active"></i>
+                          <i class="zmdi zmdi-star"></i>
+                          <i class="zmdi zmdi-star"></i>
                         </div>
                     </div>
                 

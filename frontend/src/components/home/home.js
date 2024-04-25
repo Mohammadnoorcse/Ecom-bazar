@@ -85,3 +85,79 @@ export const topsection =[
     },
   
 ]
+
+
+export const product=[
+  {
+    id:1,
+    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
+    name:"Men Watch",
+    price:1200,
+    past_price:2000,
+    discount:8
+
+  },
+  {
+    id:2,
+    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
+    name:"Men Watch",
+    price:1200,
+    past_price:2000,
+    discount:8
+
+  },
+  {
+    id:3,
+    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
+    name:"Men Watch",
+    price:1200,
+    past_price:2000,
+    discount:8
+
+  },
+  {
+    id:4,
+    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
+    name:"Men Watch",
+    price:1200,
+    past_price:2000,
+    discount:8
+
+  },
+  {
+    id:5,
+    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
+    name:"Men Watch",
+    price:1200,
+    past_price:2000,
+    discount:8
+
+  },
+  {
+    id:6,
+    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
+    name:"Men Watch",
+    price:1200,
+    past_price:2000,
+    discount:8
+
+  },
+  {
+    id:7,
+    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
+    name:"Men Watch",
+    price:1200,
+    past_price:2000,
+    discount:8
+
+  },
+  {
+    id:8,
+    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
+    name:"Men Watch",
+    price:1200,
+    past_price:2000,
+    discount:8
+
+  },
+]
