@@ -10,12 +10,15 @@ function Product() {
         <div className="product-content content">
             <div className="product-content-title">
                 <span>Hot Product</span>
-                 <Link>More Product<i class="fa-solid fa-arrow-right"></i></Link>
+                 <Link to="/all-product">More Product<i class="fa-solid fa-arrow-right"></i></Link>
             </div>
             <div className="product-item">
-                {product.map((value)=>(
-                    <ProductCard  value={value}/>
-                ))}
+                {/* {product.map((value,index)=>(
+                     
+                ))} */}
+                 {product.slice(0, 12).map((value, index) => (
+                    <ProductCard key={index} value={value} />
+                 ))}
             </div>
         </div>
 

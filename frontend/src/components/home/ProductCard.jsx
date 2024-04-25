@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import "./productcard.css"
 export default function({value}) {
   return (
     <div className='product-card' key={value.id}>
