@@ -99,8 +99,8 @@ export const product=[
   },
   {
     id:2,
-    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
-    name:"Men Watch",
+    img:"https://bd-live-21.slatic.net/kf/S2223b18d60a840478897817ecc948a4bw.jpg",
+    name:"TWS Pro60 Wireless",
     price:1200,
     past_price:2000,
     discount:8
@@ -108,8 +108,8 @@ export const product=[
   },
   {
     id:3,
-    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
-    name:"Men Watch",
+    img:"https://bd-live-21.slatic.net/kf/S336e3da98fe4437789ef5446467e47abc.jpg",
+    name:"Smart TV Backlight For Gaming",
     price:1200,
     past_price:2000,
     discount:8
@@ -117,8 +117,8 @@ export const product=[
   },
   {
     id:4,
-    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
-    name:"Men Watch",
+    img:"https://static-01.daraz.com.bd/p/a21e7d8fc5e63963545b03cc29bcb009.jpg_200x200q80-product.jpg_.webp",
+    name:"Men Women Sport Fitness",
     price:1200,
     past_price:2000,
     discount:8
@@ -126,8 +126,8 @@ export const product=[
   },
   {
     id:5,
-    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
-    name:"Men Watch",
+    img:"https://bd-live-21.slatic.net/kf/S1bd1773907f346108a0359f3a66966e8W.jpg",
+    name:"Women Fashion Watch",
     price:1200,
     past_price:2000,
     discount:8
@@ -135,8 +135,8 @@ export const product=[
   },
   {
     id:6,
-    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
-    name:"Men Watch",
+    img:"https://static-01.daraz.com.bd/p/51b23d41ef8f8abfc5e84abac08ff0fd.jpg_200x200q80-product.jpg_.webp",
+    name:"AP1-wireless mouse-black",
     price:1200,
     past_price:2000,
     discount:8
@@ -144,8 +144,8 @@ export const product=[
   },
   {
     id:7,
-    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
-    name:"Men Watch",
+    img:"https://bd-live-21.slatic.net/kf/S8610db7a6143425c8df0eef4abc4aa1eu.jpg",
+    name:"Samsung Galaxy Watch 6 5 4 Pro",
     price:1200,
     past_price:2000,
     discount:8
@@ -153,8 +153,8 @@ export const product=[
   },
   {
     id:8,
-    img:"https://bd-live-21.slatic.net/kf/S910be7b8c998453bb74f3f79ff4b53f6Y.jpg",
-    name:"Men Watch",
+    img:"https://bd-live-21.slatic.net/kf/Sbf73a93fea8f4e3aa207cf4c91c31f6fy.jpg",
+    name:"Pet Hair Removal Brush",
     price:1200,
     past_price:2000,
     discount:8
