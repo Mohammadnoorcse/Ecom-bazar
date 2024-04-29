@@ -6,12 +6,13 @@ import Card from './Card.jsx'
 import EarnChart from './EarnChart.jsx'
 import DeshboardTable from './DeshboardTable.jsx'
 import StockTable from './StockTable.jsx'
+import DeshboardSidebar from './DeshboardSidebar.jsx'
 export default function Deshboard() {
   return (
     <div className='deshboard content-center w-100 '>
         <div className="deshboard-content content">
             <div className="deshboard-content-item">
-                <div className="deshboard-sidebar">
+                {/* <div className="deshboard-sidebar">
                     <div className="deshboard-sidebar-title">
                         <span>Ecom-Bazar</span>
                     </div>
@@ -47,7 +48,8 @@ export default function Deshboard() {
                             </Link>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <DeshboardSidebar/>
                  <div className="deshboard-item">
 
                     <div className="deshboard-item-title">
