@@ -76,7 +76,7 @@ export default function Navbar() {
                       </div>
                     </div>
                     <div className="navbar-content-3-1-item-content">
-                      {user.role === "user" && <Link to="/profile">Admin</Link>}
+                      {user.role === "user" && <Link to="/deshboard">Admin</Link>}
                       <Link to="/profile">Profile</Link>
                       <Link to="/profile">Profile</Link>
                       <Link to="/profile">Profile</Link>
@@ -179,7 +179,7 @@ export default function Navbar() {
                       </div>
                       <div className="navbar-content-3-1-item-content">
                         {user.role === "user" && (
-                          <Link to="/profile">Admin</Link>
+                          <Link to="/deshboard">Admin</Link>
                         )}
                         <Link to="/profile">Profile</Link>
                         <Link to="/profile">Profile</Link>
