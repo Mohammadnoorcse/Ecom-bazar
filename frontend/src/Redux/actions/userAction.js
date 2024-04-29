@@ -5,7 +5,9 @@ import {
     REGISTER_USER_SUCCESS,
     LOGIN_FAIL,
     LOGIN_REQUEST,
-    LOGIN_SUCCESS
+    LOGIN_SUCCESS,
+    LOGOUT_FAIL,
+    LOGOUT_SUCCESS
     } from "../constants/userConstants"
     import axios from "axios";
 // Register
@@ -47,6 +49,16 @@ export const login = (email, password) => async (dispatch) => {
     }
   };
 
+  // Logout User
+export const logout = () => async (dispatch) => {
+  try {
+    await axios.get(`http://localhost:4000/api/v1/logout`);
+
+    dispatch({ type: LOGOUT_SUCCESS });
+  } catch (error) {
+    dispatch({ type: LOGOUT_FAIL, payload: error.response.data.message });
+  }
+};
 
   // Clearing Errors
 export const clearErrors = () => async (dispatch) => {

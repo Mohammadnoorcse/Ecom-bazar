@@ -2,11 +2,23 @@ import { useState } from "react";
 import Topnavbar from "./Topnavbar";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector,useDispatch } from "react-redux";
+import { useAlert } from "react-alert";
+import { logout } from "../../Redux/actions/userAction";
+
 
 export default function Navbar() {
+  const dispatch = useDispatch();
+  const alert = useAlert();
+ 
+
   const [showItem,setShowItem] = useState(false);
   const {user } = useSelector((state) => state.userdata);
+
+  function logoutUser() {
+    dispatch(logout());
+    alert.success("Logout Successfully");
+  }
 
   return (
     <>
@@ -69,7 +81,7 @@ export default function Navbar() {
                       <Link to="/profile">Profile</Link>
                       <Link to="/profile">Profile</Link>
                       <Link to="/profile">Profile</Link>
-                      <Link to="/profile">Profile</Link>
+                      <Link onClick={()=>logoutUser()}>LogOut</Link>
                     </div>
                   </div>
                 </>
