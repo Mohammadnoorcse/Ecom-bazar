@@ -8,8 +8,8 @@ import Login from './components/login/Login'
 import  {Signup}  from './components/login/Signup'
 import AllProduct from './components/product/AllProduct'
 
-
 export default function App() {
+ 
   return (
     <BrowserRouter>
 
