@@ -2,23 +2,7 @@ import React, { useState } from 'react';
 
 export default function AddProduct() {
     const [selectedImages, setSelectedImages] = useState([]);
-
-    // const handleImageChange = (e) => {
-    //     const files = e.target.files;
-    //     if (files) {
-    //       const imagesArray = [];
-    //       for (let i = 0; i < files.length; i++) {
-    //         const reader = new FileReader();
-    //         reader.onloadend = () => {
-    //           imagesArray.push(reader.result);
-    //           if (imagesArray.length === files.length) {
-    //             setSelectedImages(imagesArray);
-    //           }
-    //         };
-    //         reader.readAsDataURL(files[i]);
-    //       }
-    //     }
-    //   };
+   
 
     const handleImageChange = (e) => {
         const files = e.target.files;
@@ -32,20 +16,18 @@ export default function AddProduct() {
                 setSelectedImages(imagesArray);
               }
             };
-            reader.onerror = (error) => {
-              console.error('File reading error:', error);
-            };
             reader.readAsDataURL(files[i]);
           }
         }
       };
 
-    console.log(selectedImages);
+   
+    
   return (
     <div className='addproduct'>
         <div className="addproduct-title">
             <span>Add New Product</span>
-             <span>x</span>
+             {/* <span >x</span> */}
         </div>
          <div className="addproduct-item">
             <div className="addproduct-item-1">

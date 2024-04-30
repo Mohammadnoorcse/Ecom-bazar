@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./deshboardproduct.css"
 import DeshboardSidebar from '../DeshboardSidebar'
 import AddProduct from './AddProduct'
+
 export default function DeshboardProduct() {
+    const [showAddProduct, setShowAddProduct] = useState(false);
+   
+   
   return (
     <div className='deshboard-product content-center w-100'>
         <div className="deshboard-product-content content">
@@ -14,9 +18,9 @@ export default function DeshboardProduct() {
                             <span>Product</span>
                         </div>
                          <div className="product-title-right">
-                            <span className='header'>Add Product</span>
-                            <div className="product-title-right-child">
-                              <AddProduct/>   
+                            <span className='header' onClick={()=>setShowAddProduct(true)}>Add Product</span>
+                            <div className={showAddProduct? "product-title-right-child":"product-title-right-child-display"}>
+                              <AddProduct />   
                             </div>
                          </div>
                     </div>

@@ -1,7 +1,7 @@
 
 .deshboard-product{
     /* height: auto; */
-    height: 62rem;
+    height: 63rem;
     margin: 1rem 0;
 }
 
@@ -51,20 +51,26 @@
     top: 0;
     right: 0;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 8px;
     background-color: #64696E;
     padding: 0.5rem;
+}
+.product-title-right .product-title-right-child-display{
+    display: none;
 }
 /* ..............add product................. */
 .addproduct{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-top: 1rem;
 }
+
 .addproduct .addproduct-title{
     display: flex;
     justify-content: space-between;
+    
 }
 .addproduct .addproduct-title span{
     color: white;
