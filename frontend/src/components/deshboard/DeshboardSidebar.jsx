@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
+import "./sidebar.css"
 export default function DeshboardSidebar() {
   return (
     <div className="deshboard-sidebar">
@@ -8,13 +9,13 @@ export default function DeshboardSidebar() {
     </div>
     <div className="deshboard-sidebar-value">
         <div>
-            <Link to="/">
+            <Link to="/deshboard">
              <span><i class="fa-solid fa-landmark"></i></span>
              <span>Deshboard</span>
             </Link>
         </div>
         <div>
-            <Link to="/">
+            <Link to="/deshboard/product">
              <span><i class="fa-solid fa-shirt"></i></span>
              <span>Product</span>
             </Link>

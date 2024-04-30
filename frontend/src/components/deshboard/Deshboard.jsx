@@ -1,6 +1,6 @@
 import React from 'react'
 import "./deshboard.css"
-import {Link} from "react-router-dom"
+
 import {cardItem} from "./data.js"
 import Card from './Card.jsx'
 import EarnChart from './EarnChart.jsx'
