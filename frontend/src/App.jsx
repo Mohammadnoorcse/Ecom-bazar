@@ -9,6 +9,7 @@ import  {Signup}  from './components/login/Signup'
 import AllProduct from './components/product/AllProduct'
 import Deshboard from './components/deshboard/Deshboard'
 import DeshboardProduct from './components/deshboard/product/DeshboardProduct'
+import ProductDetails from './components/home/ProductDetails'
 
 export default function App() {
  
@@ -21,6 +22,8 @@ export default function App() {
         <Route path="/login" element={<Login/>}/> 
         <Route path="/register" element={<Signup/>}/> 
         <Route path="/all-product" element={<AllProduct/>}/> 
+        <Route path="/product/:id" element={<ProductDetails/>}/> 
+
 
         <Route path="/deshboard" element={<Deshboard/>}/> 
         <Route path="/deshboard/product" element={<DeshboardProduct/>}/> 

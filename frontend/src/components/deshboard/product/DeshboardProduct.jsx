@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import "./deshboardproduct.css"
 import DeshboardSidebar from '../DeshboardSidebar'
 import AddProduct from './AddProduct'
+import ProductCategory from './ProductCategory';
+import ProductTable from './ProductTable';
 
 export default function DeshboardProduct() {
     const [showAddProduct, setShowAddProduct] = useState(false);
@@ -23,6 +25,12 @@ export default function DeshboardProduct() {
                               <AddProduct />   
                             </div>
                          </div>
+                    </div>
+                    <div className="deshboard-product-item-value-all">
+                      <ProductCategory/>
+                    </div>
+                    <div className="deshboard-product-item-value-all-product">
+                      <ProductTable/>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import "./productcard.css"
 export default function({value}) {
   return (
     <div className='product-card' key={value.id}>
-        <Link to='#'>
+        <Link to={`/product/${value.id}`}>
           <img src={value.img} alt="" srcset="" />
            <span className='product-name'>{value.name}</span>
            <span className='product-price'>৳{value.price}</span>

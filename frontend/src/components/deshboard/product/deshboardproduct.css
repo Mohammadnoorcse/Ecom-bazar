@@ -1,7 +1,7 @@
 
 .deshboard-product{
     /* height: auto; */
-    height: 63rem;
+    height: 62.2rem;
     margin: 1rem 0;
 }
 
@@ -55,6 +55,7 @@
     border-radius: 8px;
     background-color: #64696E;
     padding: 0.5rem;
+    z-index: 100;
 }
 .product-title-right .product-title-right-child-display{
     display: none;
@@ -297,3 +298,33 @@
     font-size: 14px;
     font-weight: bold;
  }
+
+
+ /* deshboard-product-item-value-all */
+
+ .deshboard-product-item-value-all{
+    height: 30rem;
+    border-radius: 8px;
+    background-color: #64696E;
+    margin-top: 1rem;
+ }
+
+ .deshboard-product-item-value-all-product{
+    height: 100%;
+    border-radius: 8px;
+    background-color: #64696E;
+    margin-top: 1rem;
+ }
+ .custom-header{
+    background-color:#64696E;
+    font-weight: bold;
+    color: #94969D;
+  
+ }
+.MuiDataGrid-cell{
+    color: #94969D !important;
+    /* text-align: center !important; */
+}
+.MuiDataGrid-columnHeaderTitleContainer{
+    text-align: center !important;
+}
