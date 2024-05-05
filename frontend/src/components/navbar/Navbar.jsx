@@ -106,7 +106,7 @@ export default function Navbar() {
                 </Link>
               </div>
               <div className="navbar-content-3-2-3">
-                <Link to="/">
+                <Link to="/cart">
                   <i class="fa-solid fa-cart-shopping"></i>
                   <span>cart</span>
                   <span className="items">0</span>
@@ -211,7 +211,7 @@ export default function Navbar() {
                   </Link>
                 </div>
                 <div className="navbar-content-3-2-3">
-                  <Link to="/">
+                  <Link to="/cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span>cart</span>
                     <span className="items">0</span>

@@ -6,14 +6,17 @@ import "./productdetails.css"
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Rating } from "@material-ui/lab"
-
-
+import { useSelector,useDispatch } from "react-redux";
+import {useNavigate} from "react-router-dom"
+import { useAlert } from "react-alert";
 
 export default function ProductDetails() {
-
+    const alert = useAlert();
+    const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
     const [open, setOpen] = useState(false);
     const [rating, setRating] = useState(0);
+    const {user } = useSelector((state) => state.userdata);
 
     const images = [
         { original: 'https://picsum.photos/id/1018/1000/600/', thumbnail: 'https://picsum.photos/id/1018/250/150/' },
@@ -55,7 +58,17 @@ export default function ProductDetails() {
       const submitReviewToggle = () => {
         open ? setOpen(false) : setOpen(true);
       };
-   
+
+      const redirect = location.search ? location.search.split("=")[1] : "/login";
+     
+      const addToCartHandler = () => {
+        if(!user){
+          alert.error('Please login')
+          navigate(redirect);
+        }
+        // dispatch(addItemsToCart(match.params.id, quantity));
+        // alert.success("Item Added To Cart");
+      };
     return (
         <div className='product-detail content-center w-100'>
             <div className="product-detail-content content">
@@ -96,7 +109,7 @@ export default function ProductDetails() {
                             </div>
                             <button className='cart-button'
                     // disabled={product.Stock < 1 ? true : false}
-                            // onClick={addToCartHandler}
+                            onClick={addToCartHandler}
                             >
                               Add to Cart
                             </button>

@@ -30,7 +30,10 @@ app.use(fileUpload());
 // app.use("/api/v1", order);
 // app.use("/api/v1", payment);
 const user = require("./routes/userRoute");
+const product = require("./routes/productRoute");
+
 app.use("/api/v1", user);
+app.use("/api/v1", product);
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 

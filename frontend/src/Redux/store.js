@@ -4,11 +4,15 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 import{
 userReducer
-} from "./reducers/userReducer"
+} from "./reducers/userReducer";
+import{
+newProductReducer
+} from "./reducers/productReducer"
 
 
 const reducer = combineReducers({
-    userdata:userReducer
+    userdata:userReducer,
+    newProduct: newProductReducer
 });
 
 const userInfoFromStorage = localStorage.getItem("user")

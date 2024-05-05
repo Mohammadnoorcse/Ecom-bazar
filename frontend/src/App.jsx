@@ -10,6 +10,7 @@ import AllProduct from './components/product/AllProduct'
 import Deshboard from './components/deshboard/Deshboard'
 import DeshboardProduct from './components/deshboard/product/DeshboardProduct'
 import ProductDetails from './components/home/ProductDetails'
+import Cart from './components/cart/Cart'
 
 export default function App() {
  
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/register" element={<Signup/>}/> 
         <Route path="/all-product" element={<AllProduct/>}/> 
         <Route path="/product/:id" element={<ProductDetails/>}/> 
+        <Route path="/cart" element={<Cart/>}/> 
 
 
         <Route path="/deshboard" element={<Deshboard/>}/> 
