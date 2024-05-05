@@ -209,3 +209,22 @@
     background-color: #F57224;
     border: none;
 }
+
+@media (max-width:660px) {
+    .product-detail .product-detail-content{
+        
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .product-detail-content .product-detail-1{
+        gap: 1rem;
+    }
+   
+}
+
+@media (max-width:600px) {
+    .product-detail-content .product-detail-1{
+        flex-direction: column;
+    }
+   
+}
