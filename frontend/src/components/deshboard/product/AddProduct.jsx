@@ -21,9 +21,14 @@ export default function AddProduct() {
   const [Stock, setStock] = useState(0);
   const [discount, setDiscount] = useState(0);
   const [discountType, setDiscountType] = useState("");
-  const [size, setSize] = useState([]);
+  
   const [gender, setGender] = useState("");
   const [category, setCategory] = useState("");
+  
+  const [sizes, setSizes] = useState([]);
+
+ 
+
 
   const categories = [
     "Laptop",
@@ -35,21 +40,17 @@ export default function AddProduct() {
     "SmartPhones",
   ];
 
-// Function to handle checkbox changes
-const handleSizeChange = (event) => {
-  const { value, checked } = event.target;
-  let updatedSizes = [...size]; // Copy the current size array
-
-  if (checked) {
-      // If checkbox is checked, add the value to the size array
-      updatedSizes.push(value);
-  } else {
-      // If checkbox is unchecked, remove the value from the size array
-      updatedSizes = updatedSizes.filter(item => item !== value);
-  }
-
-  setSize(updatedSizes);
-};
+  const handleCheckboxChange = (event) => {
+    const { value } = event.target;
+    if (sizes.includes(value)) {
+      // If already checked, remove it
+      setSizes(sizes.filter((size) => size !== value));
+    } else {
+      // If not checked, add it
+      setSizes([...sizes, value]);
+    }
+    console.log(sizes)
+  };
 
 
   useEffect(() => {
@@ -79,11 +80,8 @@ const handleSizeChange = (event) => {
     myForm.set("gender", gender);
     myForm.set("category", category);
     myForm.set("Stock", Stock);
-    
-    size.forEach((size) => {
-      myForm.append("size", size);
-    });
-
+    myForm.append("size", sizes);
+   
     selectedImages.forEach((image) => {
       myForm.append("images", image);
     });
@@ -237,62 +235,61 @@ const handleSizeChange = (event) => {
                                 <input type="checkbox" id="s" name="vehicle1" value="S"/>
                                 <label for="s">S</label>
                                 </div> */}
-
-<div>
-                <input 
-                    type="checkbox" 
-                    id="xxl" 
-                    name="size" 
-                    value="XXL"
-                    checked={size.includes("XXL")}
-                    onChange={handleSizeChange}
-                />
-                <label htmlFor="xxl">XXL</label>
-            </div>
-            <div>
-                <input 
-                    type="checkbox" 
-                    id="xl" 
-                    name="size" 
-                    value="XL"
-                    checked={size.includes("XL")}
-                    onChange={handleSizeChange}
-                />
-                <label htmlFor="xl">XL</label>
-            </div>
-            <div>
-                <input 
-                    type="checkbox" 
-                    id="sx" 
-                    name="size" 
-                    value="SX"
-                    checked={size.includes("SX")}
-                    onChange={handleSizeChange}
-                />
-                <label htmlFor="sx">SX</label>
-            </div>
-            <div>
-                <input 
-                    type="checkbox" 
-                    id="m" 
-                    name="size" 
-                    value="M"
-                    checked={size.includes("M")}
-                    onChange={handleSizeChange}
-                />
-                <label htmlFor="m">M</label>
-            </div>
-            <div>
-                <input 
-                    type="checkbox" 
-                    id="s" 
-                    name="size" 
-                    value="S"
-                    checked={size.includes("S")}
-                    onChange={handleSizeChange}
-                />
-                <label htmlFor="s">S</label>
-            </div>
+                <div>
+        <input
+          type="checkbox"
+          id="xxl"
+          name="vehicle1"
+          value="XXL"
+          checked={sizes.includes("XXL")}
+          onChange={handleCheckboxChange}
+        />
+        <label htmlFor="xxl">XXL</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="xl"
+          name="vehicle1"
+          value="XL"
+          checked={sizes.includes("XL")}
+          onChange={handleCheckboxChange}
+        />
+        <label htmlFor="xl">XL</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="sx"
+          name="vehicle1"
+          value="SX"
+          checked={sizes.includes("SX")}
+          onChange={handleCheckboxChange}
+        />
+        <label htmlFor="sx">SX</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="m"
+          name="vehicle1"
+          value="M"
+          checked={sizes.includes("M")}
+          onChange={handleCheckboxChange}
+        />
+        <label htmlFor="m">M</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="s"
+          name="vehicle1"
+          value="S"
+          checked={sizes.includes("S")}
+          onChange={handleCheckboxChange}
+        />
+        <label htmlFor="s">S</label>
+      </div>
 
                   </div>
                 </div>
