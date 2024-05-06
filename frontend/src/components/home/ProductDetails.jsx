@@ -7,15 +7,21 @@ import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import { Rating } from "@material-ui/lab"
 import { useSelector,useDispatch } from "react-redux";
-import {useNavigate} from "react-router-dom"
+import {useNavigate,useParams} from "react-router-dom"
 import { useAlert } from "react-alert";
+import { addItemsToCart } from "../../Redux/actions/cartAction";
 
 export default function ProductDetails() {
     const alert = useAlert();
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const {id} = useParams();
+
     const [quantity, setQuantity] = useState(1);
     const [open, setOpen] = useState(false);
     const [rating, setRating] = useState(0);
+  
+
     const {user } = useSelector((state) => state.userdata);
 
     const images = [
@@ -66,8 +72,8 @@ export default function ProductDetails() {
           alert.error('Please login')
           navigate(redirect);
         }
-        // dispatch(addItemsToCart(match.params.id, quantity));
-        // alert.success("Item Added To Cart");
+        dispatch(addItemsToCart(id, quantity));
+        alert.success("Item Added To Cart");
       };
     return (
         <div className='product-detail content-center w-100'>

@@ -8,10 +8,12 @@ import { useAlert } from "react-alert";
 import { NEW_PRODUCT_RESET } from "../../../Redux/constants/productConstants";
 import { useNavigate } from "react-router-dom";
 
+
 export default function AddProduct() {
   const dispatch = useDispatch();
   const alert = useAlert();
   const navigate = useNavigate();
+  
 
   const { loading, error, success } = useSelector((state) => state.newProduct);
   const [name, setName] = useState("");
@@ -104,6 +106,9 @@ export default function AddProduct() {
       }
     }
   };
+
+
+  
 
   return (
     <div className="addproduct">
