@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
 const path = require("path");
 const cors = require('cors')
+const fileupload = require('express-fileupload'); 
 
 const errorMiddleware = require("./middleware/error");
 
@@ -18,8 +19,9 @@ app.use(express.json({limit: '500mb'}));
 app.use(express.urlencoded({limit: '500mb'}));
 // app.use(express.limit(100000000));
 app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }))
+app.use(fileupload({useTempFiles: true}));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(fileUpload());
 
 // Route Imports
 // const product = require("./routes/productRoute");

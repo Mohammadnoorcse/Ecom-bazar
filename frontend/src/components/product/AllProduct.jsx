@@ -2,16 +2,23 @@ import React, { useState } from 'react'
 import "./allproduct.css";
 import {product} from "../home/home.js"
 import ProductCard from '../home/ProductCard.jsx';
+import { useSelector, useDispatch } from "react-redux";
+import Loader from "../loader/Loader.jsx";
 
 export default function AllProduct() {
   const [filterItem,setFilterItem] = useState(false);
   console.log(filterItem)
+
+  const { loading, error, products } = useSelector((state) => state.products);
   
   return (
+   <>{
+    loading?<Loader/>:<>
+    
     <div className='allproduct content-center w-100'>
         <div className="allproduct-content content">
             <div className="allproduct-item">
-            {product.map((value)=>(
+            {products.map((value)=>(
                     <ProductCard  value={value}/>
                 ))}
             </div>
@@ -54,5 +61,11 @@ export default function AllProduct() {
         </div>
 
     </div>
+    
+    </>
+   }
+   
+   
+   </>
   )
 }

@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./home.css"
 import { Link } from 'react-router-dom'
 import {product} from "./home.js"
 import ProductCard from './ProductCard.jsx'
-
+import { useSelector, useDispatch } from "react-redux";
+import { useAlert } from "react-alert";
+import { clearErrors, getProduct } from "../../Redux/actions/productAction.js";
 function Product() {
+  const alert = useAlert();
+  const dispatch = useDispatch();
+  const { loading, error, products } = useSelector((state) => state.products);
+
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+      
+    }
+    dispatch(getProduct());
+  }, [dispatch, error, alert]);
+
   return (
     <div className='product content-center w-100'>
         <div className="product-content content">
@@ -16,7 +31,7 @@ function Product() {
                 {/* {product.map((value,index)=>(
                      
                 ))} */}
-                 {product.slice(0, 12).map((value, index) => (
+                 {products.slice(0, 12).map((value, index) => (
                     <ProductCard key={index} value={value} />
                  ))}
             </div>

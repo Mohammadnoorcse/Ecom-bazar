@@ -23,7 +23,7 @@ export default function AddProduct() {
   const [Stock, setStock] = useState(0);
   const [discount, setDiscount] = useState(0);
   const [discountType, setDiscountType] = useState("");
-  
+  const [imagesPreview, setImagesPreview] = useState([]);
   const [gender, setGender] = useState("");
   const [category, setCategory] = useState("");
   
@@ -90,23 +90,42 @@ export default function AddProduct() {
     dispatch(createProduct(myForm));
   };
 
-  const handleImageChange = (e) => {
-    const files = e.target.files;
-    if (files) {
-      const imagesArray = [];
-      for (let i = 0; i < files.length; i++) {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          imagesArray.push(reader.result);
-          if (imagesArray.length === files.length) {
-            setSelectedImages(imagesArray);
-          }
-        };
-        reader.readAsDataURL(files[i]);
-      }
-    }
-  };
+  // const handleImageChange = (e) => {
+  //   const files = e.target.files;
+  //   if (files) {
+  //     const imagesArray = [];
+  //     for (let i = 0; i < files.length; i++) {
+  //       const reader = new FileReader();
+  //       reader.onloadend = () => {
+  //         imagesArray.push(reader.result);
+  //         if (imagesArray.length === files.length) {
+  //           setSelectedImages(imagesArray);
+  //         }
+  //       };
+  //       reader.readAsDataURL(files[i]);
+  //     }
+  //   }
+  // };
 
+  const createProductImagesChange = (e) => {
+    const files = Array.from(e.target.files);
+
+    setSelectedImages([]);
+    setImagesPreview([]);
+
+    files.forEach((file) => {
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        if (reader.readyState === 2) {
+          setImagesPreview((old) => [...old, reader.result]);
+          setSelectedImages((old) => [...old, reader.result]);
+        }
+      };
+
+      reader.readAsDataURL(file);
+    });
+  };
 
   
 
@@ -119,7 +138,7 @@ export default function AddProduct() {
       <div className="addproduct-item">
         <div className="addproduct-item-1">
           <form action=""
-            encType="multipart/form-data"
+            Content-Type="multipart/from-data"
             onSubmit={createProductSubmitHandler}
           >
             <span className="addproduct-title">Base Information</span>
@@ -148,9 +167,9 @@ export default function AddProduct() {
               {/* <input type="file" accept="image/*" multiple onChange={handleImageChange}  />
                       <span>hii</span> */}
 
-              {selectedImages.length > 0 && (
+              {imagesPreview.length > 0 && (
                 <div className="addproduct-1-2-value">
-                  {selectedImages.map((image, index) => (
+                  {imagesPreview.map((image, index) => (
                     <div key={index}>
                       <img src={image} alt={`Preview ${index}`} />
                     </div>
@@ -162,14 +181,22 @@ export default function AddProduct() {
                 <label class="picture" for="picture__input" tabIndex="0">
                   <span class="picture__image"></span>
                 </label>
-                <input
+                {/* <input
                   type="file"
                   name="avatar"
                   id="picture__input"
                   accept="image/*"
                   multiple
                   onChange={handleImageChange}
-                />
+                /> */}
+                <input
+  type="file"
+  id="picture__input"
+  accept="image/*"
+  multiple
+  onChange={createProductImagesChange}
+/>
+
               </div>
             </div>
 
