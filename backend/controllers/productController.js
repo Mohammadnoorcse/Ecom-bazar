@@ -86,6 +86,8 @@ console.log(imagesLinks)
       success: true,
       product,
   });
+
+
 });
 
 

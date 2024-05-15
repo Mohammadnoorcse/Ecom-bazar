@@ -12,6 +12,14 @@ import { useAlert } from "react-alert";
 import { addItemsToCart } from "../../Redux/actions/cartAction";
 import {clearErrors,getProductDetails} from "../../Redux/actions/productAction";
 import Loader from '../loader/Loader';
+import {
+  Magnifier,
+  GlassMagnifier,
+  SideBySideMagnifier,
+  PictureInPictureMagnifier,
+  MOUSE_ACTIVATION,
+  TOUCH_ACTIVATION
+} from "react-image-magnifiers";
 
 export default function ProductDetails() {
     const alert = useAlert();
@@ -35,31 +43,7 @@ export default function ProductDetails() {
 
     const {user } = useSelector((state) => state.userdata);
 
-    const images = [
-        { original: 'https://picsum.photos/id/1018/1000/600/', thumbnail: 'https://picsum.photos/id/1018/250/150/' },
-        { original: 'https://picsum.photos/id/1015/1000/600/', thumbnail: 'https://picsum.photos/id/1015/250/150/' },
-        { original: 'https://picsum.photos/id/1019/1000/600/', thumbnail: 'https://picsum.photos/id/1019/250/150/' }
-     
-      ];
-    
-      // const galleryItems = product.images.map((image, index) => ({
-      //   original: image.url,
-      //   thumbnail: image.url,
-      //   // original: image.url,
-      //   // thumbnail: image.url,
-      //   originalWidth: 200, // Set original width
-      //   originalHeight: 250,
-      //   // description: `Image ${index + 1}`
-      // }));
-
-      const galleryItems = product.images ? 
-  product.images.map((image, index) => ({
-    original: image.url,
-    thumbnail: image.url,
-    originalWidth: 200,
-    originalHeight: 250,
-    // description: `Image ${index + 1}`
-  })) : [];
+  
    
       const options = {
         size: "small",
@@ -104,13 +88,13 @@ export default function ProductDetails() {
         <div className="product-detail-content content">
             <div className="product-detail-1">
                 <div className="product-detail-1-1">
-                  <ImageGallery 
-                   items={galleryItems}  
-                   showNav={false} 
-                   showFullscreenButton={false}
-                   showPlayButton={false}
-                  
-                   />;
+                 
+                  {product.images && product.images.map((image, index) => (
+                      <img key={index} src={image.url} alt="" />
+    
+                  ))}
+
+
                 </div>
                 <div className="product-detail-1-2">
                     {/* <span>Meat vegetable</span> */}

@@ -89,23 +89,9 @@ export default function AddProduct() {
     });
     dispatch(createProduct(myForm));
   };
+ 
 
-  // const handleImageChange = (e) => {
-  //   const files = e.target.files;
-  //   if (files) {
-  //     const imagesArray = [];
-  //     for (let i = 0; i < files.length; i++) {
-  //       const reader = new FileReader();
-  //       reader.onloadend = () => {
-  //         imagesArray.push(reader.result);
-  //         if (imagesArray.length === files.length) {
-  //           setSelectedImages(imagesArray);
-  //         }
-  //       };
-  //       reader.readAsDataURL(files[i]);
-  //     }
-  //   }
-  // };
+  
 
   const createProductImagesChange = (e) => {
     const files = Array.from(e.target.files);
@@ -127,7 +113,7 @@ export default function AddProduct() {
     });
   };
 
-  
+
 
   return (
     <div className="addproduct">

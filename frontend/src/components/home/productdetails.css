@@ -13,8 +13,9 @@
     gap: 4rem;
 }
 
-.product-detail-content .product-detail-1-1{
-    
+.product-detail-content .product-detail-1-1 img{
+    width: 20rem;
+    height: 30rem;
 }
 
 .product-detail-content .product-detail-1-2{
