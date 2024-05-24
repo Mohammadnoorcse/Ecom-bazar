@@ -22,12 +22,46 @@ export default function Cart() {
                 <span>1</span>
                 <button>-</button>
               </div>
-              <div></div>
+              <div>
+                <span>$1156.00</span> 
+                <span>$460.00 / per item</span>
+              </div>
              </div>
-             <div className="cart-item-3"></div>
+             <div className="cart-item-3">
+               <button>Remove</button>
+             </div>
           </div>
         </div>
-        <div className="cart-content-2"></div>
+        <div className="cart-content-2">
+          <div className="cart-content-2-1">
+            <span>Have coupon?</span>
+            <div>
+              <input type="text" />
+              <button>Apply</button>
+            </div>
+          </div>
+          <div className="cart-content-2-2">
+            <div>
+              <span>Total price:</span>
+              <span>$329.00</span>
+            </div>
+            <div>
+              <span>Discount:</span>
+              <span>-$60.00</span>
+            </div>
+            <div>
+              <span>TAX:</span>
+              <span>$14.00</span>
+            </div>
+            <div className="border"></div>
+            <div>
+              <span>Total price:</span>
+              <span>$283.00</span>
+            </div>
+            <button className="purchase">MAKE PURCHASE</button>
+            <button>BACK TO SHOP</button>
+          </div>
+        </div>
       </div>
 
     </div>
