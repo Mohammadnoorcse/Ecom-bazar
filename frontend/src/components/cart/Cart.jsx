@@ -36,7 +36,7 @@ export default function Cart() {
           <div className="cart-content-2-1">
             <span>Have coupon?</span>
             <div>
-              <input type="text" />
+              <input type="text" placeholder="coupon code"/>
               <button>Apply</button>
             </div>
           </div>
