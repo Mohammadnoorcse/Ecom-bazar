@@ -11,6 +11,7 @@ import Deshboard from './components/deshboard/Deshboard'
 import DeshboardProduct from './components/deshboard/product/DeshboardProduct'
 import ProductDetails from './components/home/ProductDetails'
 import Cart from './components/cart/Cart'
+import CheckOut from './components/cart/CheckOut'
 
 export default function App() {
  
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/all-product" element={<AllProduct/>}/> 
         <Route path="/product/:id" element={<ProductDetails/>}/> 
         <Route path="/cart" element={<Cart/>}/> 
+        <Route path="/checkout" element={<CheckOut/>}/> 
 
 
         <Route path="/deshboard" element={<Deshboard/>}/> 

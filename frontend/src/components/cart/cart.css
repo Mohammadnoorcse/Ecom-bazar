@@ -163,20 +163,24 @@
 .border{
     border: 1px solid  rgba(0, 0, 0, 0.1);
 }
-.cart-content-2-2 button{
+.cart-content-2-2 a{
     padding: 0.4rem 0;
     border: none;
     font-size: 14px;
     cursor: pointer;
     font-weight: 400;
     border-radius: 4px;
+    text-align: center;
 }
 .cart-content-2-2 .purchase{
     background-color: green;
     font-weight: bold;
     color: white;
 }
-
+.cart-content-2-2 .back-btn{
+  background-color:floralwhite;
+  color: #555555;
+}
 
 @media (max-width:1100px) {
     .cart-item-1{

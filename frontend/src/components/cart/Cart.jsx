@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import "./cart.css"
 export default function Cart() {
   return (
@@ -58,8 +59,8 @@ export default function Cart() {
               <span>Total price:</span>
               <span>$283.00</span>
             </div>
-            <button className="purchase">MAKE PURCHASE</button>
-            <button>BACK TO SHOP</button>
+            <Link className="purchase" to="/checkout">MAKE PURCHASE</Link>
+            <Link to="/all-product" className="back-btn">BACK TO SHOP</Link>
           </div>
         </div>
       </div>
