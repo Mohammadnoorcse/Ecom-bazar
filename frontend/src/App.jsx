@@ -12,6 +12,7 @@ import DeshboardProduct from './components/deshboard/product/DeshboardProduct'
 import ProductDetails from './components/home/ProductDetails'
 import Cart from './components/cart/Cart'
 import CheckOut from './components/cart/CheckOut'
+import Download from './components/download/Download'
 
 export default function App() {
  
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/product/:id" element={<ProductDetails/>}/> 
         <Route path="/cart" element={<Cart/>}/> 
         <Route path="/checkout" element={<CheckOut/>}/> 
+        <Route path="/download" element={<Download/>}/> 
 
 
         <Route path="/deshboard" element={<Deshboard/>}/> 
